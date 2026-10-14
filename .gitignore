@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.local
+.DS_Store
+
+# Package tarballs & local test artifacts
+*.tgz
+.release-check/
+.tools/
+.pnpm-store/
