@@ -7,7 +7,7 @@ import {
   parseWebhookEvents,
   WhatsAppValidationError,
   DEFAULT_GRAPH_API_VERSION,
-} from "../dist/index.mjs";
+} from "waffly";
 
 console.log("Testing runtime compatibility with waffly...");
 

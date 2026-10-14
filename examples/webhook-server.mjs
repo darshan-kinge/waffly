@@ -3,7 +3,7 @@ import {
   parseWebhookEvents,
   verifyWebhookChallenge,
   verifyWebhookSignature,
-} from "../dist/index.mjs";
+} from "waffly";
 
 const port = Number(process.env.PORT ?? 3000);
 const verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;

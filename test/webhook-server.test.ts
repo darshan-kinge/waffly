@@ -3,7 +3,7 @@ import { createHmac } from "node:crypto";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 
 const { server } = vi.hoisted(() => ({ server: { handler: undefined as any } }));
-vi.mock("../dist/index.mjs", () => import("../src/index.js"));
+vi.mock("waffly", () => import("../src/index.js"));
 vi.mock("node:http", () => ({
   createServer: (handler: unknown) => {
     server.handler = handler;
