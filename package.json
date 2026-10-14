@@ -2,6 +2,15 @@
   "name": "waffly",
   "version": "0.1.0",
   "description": "Waffly — a typed, lightweight SDK for the WhatsApp Cloud API",
+  "author": "Darshan Kinge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshan-kinge/waffly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darshan-kinge/waffly/issues"
+  },
+  "homepage": "https://github.com/darshan-kinge/waffly#readme",
   "engines": {
     "node": ">=20"
   },
