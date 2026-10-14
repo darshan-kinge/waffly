@@ -78,7 +78,19 @@ const server = createServer(async (request, response) => {
   try {
     const events = parseWebhookEvents(rawBody);
     for (const event of events) {
-      console.log(JSON.stringify(event));
+      if (event.event === "message.received") {
+        const contact = event.contactName ? ` (${event.contactName})` : "";
+        console.log(`\n📩 Received ${event.messageType} message from ${event.from}${contact}:`);
+        if (event.messageType === "text") {
+          console.log(`   "${event.text}"`);
+        } else {
+          console.log(`   [${event.messageType}] Media ID: ${event.mediaId}`);
+        }
+      } else if (event.event.startsWith("message.")) {
+        console.log(`\n📊 Delivery Status: Message ${event.messageId} -> ${event.status.toUpperCase()} (Recipient: ${event.recipientId})`);
+      } else {
+        console.log("\n⚡ Webhook Event:", JSON.stringify(event, null, 2));
+      }
     }
     response.writeHead(200).end("OK");
   } catch (error) {
