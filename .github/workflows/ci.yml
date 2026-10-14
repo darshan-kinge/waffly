@@ -36,5 +36,8 @@ jobs:
       - name: Build bundles
         run: npm run build
 
+      - name: Audit package exports & types
+        run: npm run check:audit
+
       - name: Validate package tarball
         run: npm pack --dry-run
