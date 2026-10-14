@@ -15,7 +15,7 @@ Waffly is a typed, lightweight SDK for the **Meta WhatsApp Cloud API**. Send mes
 
 ## Why Waffly?
 
-- ⚡ **Zero Runtime Dependencies**: Built on native `fetch` and Node's built-in crypto. Dual ESM and CommonJS builds.
+- ⚡ **Zero Runtime Dependencies**: Built on native `fetch` and standard `node:crypto`. Dual ESM and CommonJS builds with full **Node.js**, **Bun**, and **Deno** compatibility.
 - 🛡️ **Fully Typed**: Strong typing for messages, media, templates, webhooks, API responses, and errors.
 - 💬 **Complete Message Support**: Text, approved templates, media (image, audio, video, document), location pins, and contact cards.
 - 🔐 **First-Class Webhook Helpers**: Timing-safe GET challenge verification, HMAC-SHA256 signature checks, and normalized event streams.
