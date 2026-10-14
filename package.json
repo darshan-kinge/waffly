@@ -50,6 +50,7 @@
     "docs:preview": "vitepress preview docs",
     "prepack": "npm run clean && npm run build",
     "webhook:dev": "npm run build && node --env-file=.env examples/webhook-server.mjs",
+    "message:send": "node --env-file=.env examples/send-message.mjs",
     "clean": "rimraf dist"
   },
   "keywords": [
