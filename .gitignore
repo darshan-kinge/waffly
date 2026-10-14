@@ -11,3 +11,7 @@ coverage/
 .release-check/
 .tools/
 .pnpm-store/
+
+# VitePress cache and build
+docs/.vitepress/dist/
+docs/.vitepress/cache/

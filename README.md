@@ -3,6 +3,7 @@
 **WhatsApp integrations, clearly typed.**
 
 [![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/waffly)
+[![Documentation](https://img.shields.io/badge/docs-website-brightgreen.svg)](https://darshan-kinge.github.io/waffly/)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20-green.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
@@ -303,7 +304,8 @@ try {
 
 ## In-Depth Documentation
 
-For the complete API reference, advanced parameters, webhook event catalog, and operational guidelines, see the **[Package Guide](docs/PACKAGE_GUIDE.md)**.
+- 🌐 **[Interactive Documentation Website](https://darshan-kinge.github.io/waffly/)**: Comprehensive guides, searchable API reference, code examples, and troubleshooting FAQ.
+- 📖 **[Offline Package Guide](docs/PACKAGE_GUIDE.md)**: Full offline markdown reference bundled inside the npm package.
 
 ---
 
