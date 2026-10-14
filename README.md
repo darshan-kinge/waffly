@@ -234,7 +234,8 @@ if (challenge) {
 ```typescript
 import { verifyWebhookSignature, parseWebhookEvents } from "waffly";
 
-// Note: Pass rawBody (Buffer or string) BEFORE JSON.parse
+// Note: Pass rawBody (Buffer or string) BEFORE JSON.parse.
+// In Express, use: app.use("/webhook", express.raw({ type: "application/json" }))
 const isValid = verifyWebhookSignature({
   rawBody,
   signature: req.headers["x-hub-signature-256"] as string,

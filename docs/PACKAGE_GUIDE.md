@@ -458,6 +458,8 @@ Meta signs every POST request using HMAC-SHA256 with your **App Secret** in the 
 
 > [!WARNING]
 > Always verify the signature using the **exact raw request bytes** (`Buffer` or raw `string`) before running `JSON.parse`.
+>
+> If you are using Express, mount `express.raw({ type: "application/json" })` on your webhook endpoint so `req.body` remains an untouched `Buffer`.
 
 ```typescript
 import { verifyWebhookSignature, parseWebhookEvents } from "waffly";
